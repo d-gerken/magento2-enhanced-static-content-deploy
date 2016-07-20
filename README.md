@@ -1,0 +1,1 @@
+# magento2-enhanced-static-content-deploy
