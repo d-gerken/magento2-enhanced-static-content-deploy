@@ -1,0 +1,22 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+
+    <type name="Magento\Framework\Console\CommandList">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="flushCommand" xsi:type="object">Dgerken\EnhancedStaticContentDeploy\Console\Command\FlushStaticContentCommand</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Dgerken\EnhancedStaticContentDeploy\Model\Deployer">
+        <arguments>
+            <argument name="alternativeSources" xsi:type="array">
+                <item name="css" xsi:type="object">AlternativeSourceProcessors</item>
+            </argument>
+        </arguments>
+    </type>
+    <preference for="Magento\Deploy\Model\Deployer" type="Dgerken\EnhancedStaticContentDeploy\Model\Deployer"/>
+    <preference for="Magento\Framework\View\Asset\Bundle" type="Dgerken\EnhancedStaticContentDeploy\View\Asset\Bundle"/>
+    <preference for="Magento\Framework\View\Asset\Bundle\Manager" type="Dgerken\EnhancedStaticContentDeploy\View\Asset\Bundle\Manager"/>
+    <preference for="Magento\Framework\View\Asset\Bundle\Config" type="Dgerken\EnhancedStaticContentDeploy\View\Asset\Bundle\Config"/>
+</config>

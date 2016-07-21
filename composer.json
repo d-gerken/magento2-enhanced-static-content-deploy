@@ -1,0 +1,14 @@
+{
+  "name": "dgerken/module-enhanced-static-content-deploy",
+  "description": "Enhanced version of magentos static content deploy",
+  "require": {
+    "magento/framework": "*"
+  },
+  "type": "magento2-module",
+  "autoload": {
+    "files": [ "registration.php" ],
+    "psr-4": {
+      "Dgerken\\EnhancedStaticContentDeploy\\": ""
+    }
+  }
+}
