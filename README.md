@@ -1,4 +1,4 @@
-# Magento 2 Enhanced static contentdeploy
+# Magento 2 Enhanced static content deploy
 
 The enhanced static file deploy module allows a faster static content deployment. It will speed up initial the content deployment by 60%.
 
